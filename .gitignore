@@ -9,3 +9,6 @@ Thumbs.db
 
 # don't share local credentials
 profiles.yml
+/agent_kpis.csv
+/high_discount_agents.csv
+/revenue_mom.csv
