@@ -182,4 +182,4 @@ dbt deps && dbt seed --full-refresh && dbt run && dbt test
 
 ---
 
-**Автор:** _Безугла Анастасія
+**Автор:** Безугла Анастасія
