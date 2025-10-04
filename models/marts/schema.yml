@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: fct_sales
+    description: "??????? ??????? ?? ?????? ?????????? ???????."
+    columns:
+      - name: reference_id
+        tests: [not_null, unique]
+      - name: source
+        tests: [not_null]     # ???????? accepted_values, ?????? ?????? not_null
+      - name: country
+        tests: [not_null]
+      - name: product_name
+        tests: [not_null]
+      - name: number_of_rebills
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              strictly: false
+      - name: revenue_total
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: -9999999999
+              strictly: false

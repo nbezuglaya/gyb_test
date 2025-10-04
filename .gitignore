@@ -1,0 +1,11 @@
+# dbt build artifacts
+target/
+logs/
+dbt_packages/
+
+# system / editor junk
+.DS_Store
+Thumbs.db
+
+# don't share local credentials
+profiles.yml

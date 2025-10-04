@@ -1,0 +1,28 @@
+version: 2
+seeds:
+  - name: sales_data
+    config:
+      delimiter: ";"
+      quote: '"'
+      column_types:
+        "Reference ID": text
+        "Country": text
+        "Product Code": text
+        "Product Name": text
+        "Subscription Start Date": text
+        "Subscription Deactivation Date": text
+        "Subscription Duration Months": text
+        "Order Date Kyiv": text
+        "Return Date Kyiv": text
+        "Last Rebill Date Kyiv": text
+        "Has Chargeback": text
+        "Has Refund": text
+        "Sales Agent Name": text
+        "Source": text
+        "Campaign Name": text
+        "Total Amount ($)": text
+        "Discount Amount ($)": text
+        "Number Of Rebills": text
+        "Original Amount ($)": text
+        "Returned Amount ($)": text
+        "Total Rebill Amount": text
